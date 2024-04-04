@@ -1,0 +1,29 @@
+.navigations > a:hover {
+    color: #0070e0;
+    border-color: #e6e0d9;
+}
+
+.navigations > a {
+    border: .0625rem solid transparent;
+    padding: 7px 15px;
+    border-radius: 1.5rem;
+    transition: all .3s ease;
+    font-weight: 500;
+}
+.menu {
+    transform: translate(0);
+    animation: slide_from_left .4s ease-out 1;
+}
+@keyframes slide_from_left {
+    0% {
+        transform: translate(-15rem);
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+        transform: translate(-15rem);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
